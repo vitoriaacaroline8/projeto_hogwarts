@@ -1,0 +1,172 @@
+/*corpo das paginas*/
+body{
+    background:linear-gradient(to right, #740001, black);
+}
+/*titulos*/
+h1{
+    margin:10px;
+    color: rgb(233, 235, 129);
+    font-family: "Metal Mania", system-ui;
+    font-size: 80px;
+    text-align: center;
+    text-shadow: 5px 5px 5px black;
+}
+h2{
+    color: rgb(233, 235, 129);
+    font-family: "Metal Mania", system-ui;
+    font-size: 35px;
+}
+/*paragrafos*/
+p{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.5;
+}
+.paragrafo{
+    color: rgb(233, 235, 129);
+    text-align: center;
+}
+/*midias*/
+img{
+    width:50%;
+    height:50%;
+    border-radius: 15px;
+    margin: 15px;
+}
+.midia{
+    border: 5px solid black;
+    border-radius: 15px;
+    margin:20px;
+    box-shadow: 5px 5px 5px black;
+}
+audio{
+    margin-left: 20px;
+}
+/*links*/
+a{
+    color: #FFD700;
+}
+a:hover{
+    color: green;
+}
+a:active{
+    color:#457b9d;
+}
+
+/*listas*/
+li{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    list-style-type:circle;
+    padding: 3px;
+}
+th{
+    font-family: "Metal Mania", system-ui;
+    font-size: 20px;
+    background-color:#4e0203;
+    color: rgb(255, 255, 255);    
+}
+td{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+.grifinoria:hover{
+    color: red;
+}
+.sonserina:hover{
+    color: green; 
+}
+.corvinal:hover{
+    color: #457b9d;
+}
+.lufa-lufa:hover{
+    color:rgb(233, 235, 129);
+}
+
+/*Curiosidades*/
+summary{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 21px;
+    color: white;
+}
+/*formulario*/
+.formulario{
+    background-color: #4e0203;
+    width: 500px;
+    margin: auto;
+    padding: 10px;
+    padding-bottom: 5px;
+    border: 1px white solid;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px rgba(133, 3, 3, 0.541);
+    font-family: 'Courier New', Courier, monospace;
+}
+.campo, textarea{
+    padding: 10px;
+    border:1px solid red;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace; 
+}
+.select{
+    cursor: pointer;
+}
+.botao-enviar{
+    cursor: pointer;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: #740002 ;
+    color:white;
+}
+.botao-enviar:hover{
+    background-color: green;
+}
+.botao-limpar{
+    cursor: pointer;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: #740002;
+    color:white;
+}
+.botao-limpar:hover{
+    background-color: #457b9d;
+}
+
+/*flexbox*/
+.quadro{
+    background-color: #3301029a;
+    border: 1px rgb(90, 3, 3) solid ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.quadro img{
+	width: 140px;
+	height: auto;
+	opacity: 0.7;
+	transition:2s;
+}
+.quadro img:hover{
+	border: 1px red solid;
+	opacity: 1;
+}
+/*animacao*/
+@keyframes surgir{
+    from {
+        opacity: 0;
+        transform:scale(0)
+    }
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+}
+
+.animacao{
+    animation-name: surgir;
+    animation-duration: 10s;
+}
+

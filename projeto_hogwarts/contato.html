@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cadastro de Aluno - Hogwarts</title>
+  <link rel="icon" href="icone.png" type="image/png" />
+  <link rel="stylesheet" href="style.css">
+ 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Metal+Mania&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+</head>
+<body >
+
+  <h1>Cadastro de Aluno</h1>
+  <p align="center"><i>Preencha o formulário para ingressar em Hogwarts</i></p>
+  <hr>
+
+  <p align="center">
+    <b>
+      <a href="index.html">Voltar para o Início</a> |
+      <a href="contato.html">Cadastro</a> |
+      <a href="elenco.html">Personagens</a>
+    </b>
+  </p>
+  <hr />
+
+  <h2 align="center">Formulário de Inscrição</h2>
+
+  <form action="#" method="post" class="formulario">
+
+    <p>
+      <label for="nome"><b>Nome completo:</b></label><br />
+      <input class="campo" type="text" id="nome" name="nome" placeholder="Ex: Harry James Potter" size="40" required />
+    </p>
+
+    <p>
+      <label for="email"><b>E-mail:</b></label><br />
+      <input class="campo" type="email" id="email" name="email" placeholder="Ex: harry@hogwarts.wiz" size="40" required />
+    </p>
+
+    <p>
+      <label for="senha"><b>Senha mágica:</b></label><br />
+      <input class="campo" type="password" id="senha" name="senha" placeholder="Crie uma senha secreta" size="40" required />
+    </p>
+
+    <p>
+      <label for="idade"><b>Idade:</b></label><br />
+      <input class="campo" type="number" id="idade" name="idade" min="11" max="18" placeholder="11" />
+    </p>
+
+    <p>
+      <label for="nascimento"><b>Data de nascimento:</b></label><br />
+      <input class="campo" type="date" id="nascimento" name="nascimento" />
+    </p>
+
+    <p>
+      <b>Casa preferida:</b><br />
+      <input type="radio" id="grifin" name="casa" value="grifinoria" />
+      <label for="grifin" class="grifinoria">&#x1F981; Grifinória</label><br />
+
+      <input type="radio" id="sonse" name="casa" value="sonserina" />
+      <label for="sonse" class="sonserina">&#x1F40D; Sonserina</label><br />
+
+      <input type="radio" id="corvi" name="casa" value="corvinal" />
+      <label for="corvi" class="corvinal">&#x1F986; Corvinal</label><br />
+
+      <input type="radio" id="lufa" name="casa" value="lufalufa" />
+      <label for="lufa" class="lufa-lufa">&#x1F9A1; Lufa-Lufa</label>
+    </p>
+
+    <p>
+      <label for="ano"><b>Ano escolar:</b></label><br />
+      <select id="ano" name="ano">
+        <option value="">-- Selecione --</option>
+        <option value="1">6º Ano</option>
+        <option value="2">7º Ano</option>
+        <option value="3">8º Ano</option>
+        <option value="4">9º Ano</option>
+        <option value="5">1º Ano</option>
+        <option value="6">2º Ano</option>
+        <option value="7">3º Ano</option>
+      </select>
+    </p>
+
+    <p>
+      <label for="mensagem"><b>Fale um pouco sobre você:</b></label><br />
+      <textarea id="mensagem" name="mensagem" rows="5" cols="42" placeholder="Conte sua história mágica..."></textarea>
+    </p>
+
+    <p>
+      <input type="checkbox" id="termos" name="termos" required />
+      <label for="termos">
+        Declaro que li e aceito as <u class="grifinoria">Regras de Conduta de Hogwarts</u> e juro solenemente que não tenho boas intenções.
+      </label>
+    </p>
+
+    <p>
+      <input type="submit" class="botao-enviar" value="🎉 Enviar Inscrição" />
+      &nbsp;
+      <input type="reset" class="botao-limpar" value="🧹 Limpar campos" />
+    </p>
+
+  </form>
+
+  <hr />
+
+  <p align="center">
+    <a href="index.html">&#x2190; Voltar para a página principal</a>  ou 
+    <a href="elenco.html">Pagina Personagens</a>
+  </p>
+
+</body>
+</html>
